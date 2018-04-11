@@ -33,6 +33,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SobreComponent } from './components/body/sobre/sobre.component';
 import { ViajesComponent } from './components/body/viajes/viajes.component';
 import { ContactoComponent } from './components/body/contacto/contacto.component';
+import { ExperienciaComponent } from './components/body/experiencia/experiencia.component';
+import { EducacionComponent } from './components/body/educacion/educacion.component';
 // endregion Components
 
 @NgModule({
@@ -46,7 +48,9 @@ import { ContactoComponent } from './components/body/contacto/contacto.component
     NavbarComponent,
     SobreComponent,
     ViajesComponent,
-    ContactoComponent
+    ContactoComponent,
+    ExperienciaComponent,
+    EducacionComponent
   ],
   imports: [
     BrowserModule,
