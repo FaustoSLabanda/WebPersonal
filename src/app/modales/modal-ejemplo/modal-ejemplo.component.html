@@ -1,0 +1,26 @@
+<div [@dialog] *ngIf="visible" class="dialog" id="modal" >
+
+  <div class="container" style="padding-top: 20px; padding-left: 30px; padding-right: 30px;">
+
+    <div class="row">
+      <div class="col-xl-12 text-center">
+        <h2>HOLA</h2>
+      </div>
+    </div>
+ 
+
+    <div class="row">
+      <div class="col-md-12 text-center mb-1 mt-1">
+        <button class="btn  btn-danger" style="min-width:110px;" (click)="confirmarFn()">{{ 'BOTONES.CONFIRMAR' | translate }}</button>
+        <button class="btn btn-gris" style="min-width:110px;" (click)="cerrarFn()">{{ 'BOTONES.CERRAR' | translate }}</button>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<!-- DESCOMENTAR PARA FONDO NEGRO -->
+ <div *ngIf="visible" class="overlay"></div> 
+<!-- DESCOMENTAR PARA FONDO NEGRO -->

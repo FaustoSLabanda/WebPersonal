@@ -1,0 +1,12 @@
+{
+    "BOTONES":{
+        "CERRAR":"Cerrar",
+        "CONFIRMAR":"Confirmar",
+        "LOADING":"Mostrar loading",
+        "MODAL_EJEMPLO":"Mostrar modal ejemplo",
+        "ES":"Español",
+        "EN":"Inglés"
+    },
+    "TITULO":"PLANTILLA PROYECTOS AGNULAR 2"
+
+}

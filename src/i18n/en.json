@@ -1,0 +1,13 @@
+{
+    "BOTONES":{
+        "CERRAR":"Close",
+        "CONFIRMAR":"Confirm",
+        "LOADING":"Show loading",
+        "MODAL_EJEMPLO":"Show modal example",
+        "ES":"Spanish",
+        "EN":"English"
+    },
+    "TITULO": "ANGULAR 2 PROYECT TEMPLATE"
+    
+
+}

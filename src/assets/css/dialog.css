@@ -1,0 +1,98 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1990;
+  }
+
+.overlay-zindex{
+    z-index:997!important;
+  }
+
+.dialog {
+    z-index: 2000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 200px;
+    width: 90%;
+    max-width: 520px;
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  .dialog-loadRing{
+    background-color: rgba(255, 255, 255, 0) !important;
+    box-shadow:0 0 0 0, 0 0 0 0, 0 0 0 0 !important;
+  }
+
+  .dialogPrint {
+    height: 95%;
+    top: 20px;
+    min-height: 900px;
+    width: 95%;
+    max-width: 1000px;
+  }
+
+  @media (min-width: 768px) {
+    .dialog {
+      top: 250px;
+    }
+    .dialogPrint {
+      top: 20px;
+    }
+  }
+
+  .dialog__close-btn {
+    content: ’X’;
+    display: block;
+    /* Position */
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    /* Style */
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    background: #dc2d1f;
+    color: #fff;
+    border: 3px solid #fff;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+
+  
+@media screen and (orientation: portrait) {
+    .dialog.ri { max-width: 60%; }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .dialog.ri { max-height: 60%; }
+  }
+  
+  dialog.ri:empty
+  {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  
