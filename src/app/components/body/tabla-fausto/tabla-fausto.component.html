@@ -1,0 +1,83 @@
+<div *ngIf="this.data && this.data.length > 0">
+  <div class="row" *ngIf="!config?.ocultarFiltroTablaICP">
+    <div class="col-md-5">
+      <div class="input-group">
+        &nbsp;&nbsp;&nbsp;
+      
+        <input *ngIf="config.filtering" class="form-control" placeholder="Buscar..." [ngTableFiltering]="config.filtering" (tableChanged)="onChangeTable(config,undefined)"
+        />
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <br>
+
+  <app-tabla id="resultDataTable" [DatosExcel]="datosExcel" [tablaS]="scrollVar" [config]="config" *ngIf="!config.esSimple"
+    (tableChanged)="onChangeTable(config,undefined)" (cellSelected)="onCellChange($event)" (cellClicked)="onCellClick($event)"
+    [rows]="rows" [columns]="columns">
+  </app-tabla>
+
+
+  <div class="panel-footer" *ngIf="!hidePaginator && config.paging">
+    <div class="row">
+      <div class="col col-md-12 text-center">
+        <span class="leyendaSize amarillo">
+          <i class="fas fa-clipboard amarillo"></i> Creado</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize azul">
+          <i class="fas fa-truck azul izq"></i> En reparto</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize naranja">
+          <i class="fas fa-truck naranja"></i> Retorno a tienda</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize verde">
+          <i class="fas fa-check verde"></i> Entregado</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize rojo">
+          <i class="fas fa-info-circle rojo"></i> Incidencia</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize negro">
+          <i class="fas fa-times negro"></i> Anulado</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize morado">
+          <i class="fas fa-question-circle morado"></i> Pendiente</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize rosa">
+          <i class="fas fa-cog rosa"></i> Procesado</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="leyendaSize">
+          <i class="fas fa-calendar-check"></i> Reagendado</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    <br/>
+
+    <div class="row control-label">
+      <div class="col col-md-5">Página {{page}}/{{numPages}} ({{records}} elementos)
+      </div>
+
+      <div class="col">
+        <ul class="nav pull-right" style="float: right;">
+          <li>
+            <button [disabled]="!showBtnStart" [ngClass]="showBtnStart ? 'btn-next' : 'btn-prev'" class="btn boton-paginacion" (click)="paginatorGridStart()">
+              <span class="fas fa-angle-double-left"></span>
+            </button>
+            <button [disabled]="!showBtnPrev" [ngClass]="showBtnPrev ? 'btn-next' : 'btn-prev'" class="btn boton-paginacion" (click)="paginatorGridPrev()">
+              <span class="fas fa-angle-left"></span>
+            </button>
+            <button *ngFor="let item of numPagesObjList | slice:pageSliceStart:maxPageShow" [ngClass]="item.page === page? 'active' : ''"
+              (click)="showSelectedPage(item.page)" class="btn btn-paginador boton-paginacion">{{ item.textPage }}</button>
+            <button [disabled]="!showBtnNext" [ngClass]="showBtnNext ? 'btn-next' : 'btn-prev'" class="btn boton-paginacion" (click)="paginatorGridNext()">
+              <span class="fas fa-angle-right"></span>
+            </button>
+            <button [disabled]="!showBtnEnd" [ngClass]="showBtnEnd ? 'btn-next' : 'btn-prev'" class="btn boton-paginacion" (click)="paginatorGridEnd()">
+              <span class="fas fa-angle-double-right"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row-6" *ngIf="!this.data || this.data.length === 0">
+  <app-tabla id="resultDataTable" [columns]="columns" [noData]="noData" [colspan]="columns.length" *ngIf="!config.esSimple">
+  </app-tabla>
+
+</div>

@@ -1,0 +1,10 @@
+.boton-paginacion{
+    padding: 3px !important;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    margin-left: 3px !important;
+    cursor: pointer;
+  }
+  .boton-paginacion:hover{
+      font-weight: bold ;
+  }

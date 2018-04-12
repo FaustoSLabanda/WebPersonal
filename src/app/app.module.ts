@@ -35,7 +35,14 @@ import { ViajesComponent } from './components/body/viajes/viajes.component';
 import { ContactoComponent } from './components/body/contacto/contacto.component';
 import { ExperienciaComponent } from './components/body/experiencia/experiencia.component';
 import { EducacionComponent } from './components/body/educacion/educacion.component';
+import { PaginaCvComponent } from './components/body/pagina-cv/pagina-cv.component';
+import { PaginaCodigosComponent } from './components/body/pagina-codigos/pagina-codigos.component';
+import { TablaIcpComponent } from './components/body/tabla-fausto/tabla-fausto.component';
+import { TablaComponent } from './components/body/tabla-fausto/tabla/tabla/tabla.component';
 // endregion Components
+
+// import { NgTableFilteringDirective } from './directives/ng-table-filtering.directive';
+// import { NgTableSortingDirective } from './directives/ng-table-sorting.directive';
 
 @NgModule({
   declarations: [
@@ -50,7 +57,11 @@ import { EducacionComponent } from './components/body/educacion/educacion.compon
     ViajesComponent,
     ContactoComponent,
     ExperienciaComponent,
-    EducacionComponent
+    EducacionComponent,
+    PaginaCvComponent,
+    PaginaCodigosComponent,
+    TablaIcpComponent,
+    TablaComponent
   ],
   imports: [
     BrowserModule,
