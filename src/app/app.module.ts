@@ -73,7 +73,6 @@ import { TablaComponent } from './components/body/tabla-fausto/tabla/tabla/tabla
     DirectivesModule,
     // CalendarModule,
     TranslateModule.forRoot(),
-    
     APP_ROUTING
   ],
   providers: [

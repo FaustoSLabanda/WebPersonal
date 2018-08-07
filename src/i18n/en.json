@@ -1,4 +1,7 @@
 {
+    "HOME":{
+        "CABECERA":"eNGLE"
+    },
     "BOTONES":{
         "CERRAR":"Close",
         "CONFIRMAR":"Confirm",

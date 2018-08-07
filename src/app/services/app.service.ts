@@ -9,9 +9,15 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class AppService {
-
+    public idioma: string;
     constructor(public translate: TranslateService) {
+        this.idioma = 'en';
+        this.traducir();
+    }
 
+    public traducir() {
+        this.translate.setDefaultLang(this.idioma);
+        this.translate.use(this.idioma);
     }
 
 }

@@ -1,4 +1,7 @@
 {
+    "HOME":{
+        "CABECERA":"xxxxxJJ"
+    },
     "BOTONES":{
         "CERRAR":"Cerrar",
         "CONFIRMAR":"Confirmar",
