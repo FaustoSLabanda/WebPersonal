@@ -2,16 +2,36 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@components/*":["app/components/*"],
-      "@models/*":["app/models/*"],
-      "@modales/*":["app/modales/*"],
-      "@config/*":["app/config/*"],
-      "@pipes/*":["app/pipes/*"],
-      "@directives/*":["app/directives/*"],
-      "@utils/*":["app/utils/*"],
-      "@services/*":["app/services/*"],
-      "@interfaces/*":["app/interfaces/*"],
-      "@env/*":["environments/*"]
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@models/*": [
+        "app/models/*"
+      ],
+      "@modales/*": [
+        "app/modales/*"
+      ],
+      "@config/*": [
+        "app/config/*"
+      ],
+      "@pipes/*": [
+        "app/pipes/*"
+      ],
+      "@directives/*": [
+        "app/directives/*"
+      ],
+      "@utils/*": [
+        "app/utils/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ],
+      "@interfaces/*": [
+        "app/interfaces/*"
+      ],
+      "@env/*": [
+        "environments/*"
+      ]
     },
     "outDir": "./dist/out-tsc",
     "baseUrl": "src",
@@ -27,6 +47,7 @@
     "lib": [
       "es2016",
       "dom"
-    ]
+    ],
+    "module": "es2015"
   }
 }

@@ -1,6 +1,7 @@
-import { Component, OnInit, trigger, state, animate, transition, style } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Config } from '@config/config';
 import { TranslateService } from 'ng2-translate';
+import {  trigger, state, animate, transition, style } from '@angular/animations'
 
 
 @Component({

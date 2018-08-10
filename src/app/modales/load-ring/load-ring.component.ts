@@ -1,7 +1,5 @@
-import {
-  Component, OnInit, OnDestroy, Input, Output, OnChanges, EventEmitter,
-  trigger, state, style, animate, transition
-} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { trigger, state, animate, transition, style } from '@angular/animations'
 
 @Component({
   selector: 'app-load-ring',

@@ -10,6 +10,10 @@
         "ES":"Español",
         "EN":"Inglés"
     },
-    "TITULO":"PLANTILLA PROYECTOS AGNULAR 2"
+    "TITULO":"PLANTILLA PROYECTOS AGNULAR 2",
+    "EXPERIENCIA":{
+        "CABECERA":"Experienca",
+        "SUB_TITLE":"coSAS sobre mi"
+    }
 
 }
